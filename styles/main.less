@@ -27,6 +27,71 @@ header {
     }
 }
 
+// Hero Image
+.hero {
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .text {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e7e7e7;
+    opacity: 75%;
+    z-index: 1;
+}
+
+.home {
+    background-image: url("../images/scoop_cup.jpg"); 
+}
+
+.about {
+    // -----------------------------------------------------REPLACE WITH ABOUT HERO IMAGE-----------------------------------------------------
+    background-image: url("../images/scoop_cup.jpg");
+}
+
+.contact {
+    // -----------------------------------------------------REPLACE WITH CONTACT HERO IMAGE-----------------------------------------------------
+    background-image: url("../images/scoop_cup.jpg");
+}
+
+.location {
+    // -----------------------------------------------------REPLACE WITH LOCATION HERO IMAGE-----------------------------------------------------
+    background-image: url("../images/scoop_cup.jpg");
+}
+
+.menu {
+    // -----------------------------------------------------REPLACE WITH MENU HERO IMAGE-----------------------------------------------------
+    background-image: url("../images/scoop_cup.jpg");
+}
+
+// -----------------------------------------------------HOME PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// -----------------------------------------------------ABOUT PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// -----------------------------------------------------LOCATION PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// -----------------------------------------------------CONTACT PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// -----------------------------------------------------MENU PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+
+
 // Sticky Footer
 .site {
     display: flex;
