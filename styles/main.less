@@ -1,0 +1,63 @@
+@import "mixins";
+@import "variables";
+
+* {
+    .reset;
+}
+
+// Header Styling
+header {
+    background-color: #fee6cc;
+    .navbar-brand {
+        flex: 1;
+    }
+    nav{
+        width: 80%;
+        margin: 0 auto;
+        img {
+            width: 50%;
+            max-width: 150px;
+        }
+        .nav-items {
+            justify-content: flex-end;
+        }
+        .navbar-nav {
+            align-items: center;
+        }
+    }
+}
+
+// Sticky Footer
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .body-content {
+        flex: 1;
+    }
+}
+
+// Footer Styling
+footer {
+    background-color: #e7e7e7;
+    padding: 1% 0;
+    .footer-content {
+        display: flex;
+    }
+    figure {
+        text-align: center;
+        img {
+            width: 100px;
+        };
+    }
+    p {
+        text-align: center;
+        font-size: .75em;
+    }
+    .social {
+        text-align: center;
+        a {
+            font-size: 2em;
+        }
+    }
+}
