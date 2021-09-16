@@ -129,7 +129,7 @@ p.lead.font-weight-bold.text-center.w-responsive.mx-auto.mb-5.pt-3 {
   width: 100%;
   height: 100%;
   z-index: 1;
-  opacity: 0.5;
+  opacity: 0.4;
   background-image: url("../images/contactimg.jpg");
   background-position: 20% 60%;
   background-repeat: no-repeat;
@@ -139,13 +139,47 @@ p.lead.font-weight-bold.text-center.w-responsive.mx-auto.mb-5.pt-3 {
   z-index: 2;
   position: relative;
 }
-.contact-site {
+.contact-site,
+.location-site {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
-.contactbg {
+.contactbg,
+.location-content {
   flex: 1;
+}
+.location-content h2 {
+  font-family: "roboto";
+  color: black;
+}
+.location-content p {
+  font-family: "urbanist";
+  color: black;
+}
+.location-content ::placeholder {
+  font-family: "urbanist";
+}
+.location-content .btn-primary {
+  color: #fff;
+  background-color: #a85000;
+  border-color: #a85000;
+}
+p.lead.fw-bold.mt-4 {
+  color: #e2780e;
+}
+#map {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  #map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
 }
 /* --------contact & location page ends here --------*/
 .site {
