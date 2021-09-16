@@ -85,7 +85,18 @@ header {
   background-image: url("../images/scoop_cup.jpg");
 }
 
-/* contact & locations */
+.menu {
+  // -----------------------------------------------------REPLACE WITH MENU HERO IMAGE-----------------------------------------------------
+  background-image: url("../images/scoop_cup.jpg");
+}
+
+// -----------------------------------------------------HOME PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// -----------------------------------------------------ABOUT PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// -----------------------------------------------------LOCATION PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+/* ------contact & locations----------- */
 #contactform {
   .effect-1 {
     border: 0;
@@ -146,21 +157,18 @@ header {
   z-index: 2;
   position: relative;
 }
-
-/* contact & location page ends here */
-
-.menu {
-  // -----------------------------------------------------REPLACE WITH MENU HERO IMAGE-----------------------------------------------------
-  background-image: url("../images/scoop_cup.jpg");
+//sticky footer -contact page
+.contact-site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-// -----------------------------------------------------HOME PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+.contactbg {
+  flex: 1;
+}
 
-// -----------------------------------------------------ABOUT PAGE STYLING BELOW THIS LINE-----------------------------------------------------
-
-// -----------------------------------------------------LOCATION PAGE STYLING BELOW THIS LINE-----------------------------------------------------
-
-// -----------------------------------------------------CONTACT PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+/* --------contact & location page ends here --------*/
 
 // -----------------------------------------------------MENU PAGE STYLING BELOW THIS LINE-----------------------------------------------------
 
@@ -185,7 +193,8 @@ footer {
   }
   p {
     font-family: @para-font;
-    font-size: 0.75em;
+    /* font-size: 0.75em; */
+    font-size: 0.95em;
   }
   i {
     color: @blue;
