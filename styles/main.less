@@ -66,6 +66,21 @@ header {
         .navbar-nav {
             align-items: center;
         }
+        .btn-secondary {
+            color: #fff;
+            background-color: @red;
+            border-color: @red;
+        }
+    }
+    .navbar-light .navbar-toggler {
+        color: #5b2c02;
+        border-color: #5b2c02;
+    }
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show > .nav-link {
+        color: #e2780e;
+        text-decoration: underline;
+        font-weight: bold;
     }
 }
 
@@ -194,25 +209,22 @@ header {
 // Footer Styling
 footer {
     background-color: #e7e7e7;
-    padding: 1% 0;
-    .footer-content {
-        display: flex;
-    }
     figure {
-        text-align: center;
+        margin: auto;
         img {
             width: 100px;
-        };
+        }
     }
     p {
-        text-align: center;
-        font-size: .75em;
+        font-family: @para-font;
+        font-size: 0.95em;
     }
-    .social {
-        text-align: center;
-        a {
-            font-size: 2em;
-        }
+    i {
+        color: @blue;
+        font-size: 2em;
+    }
+    .col-4 {
+        text-align: right;
     }
 }
 
