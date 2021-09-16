@@ -12,17 +12,23 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/7c9dc3d97e.js" crossorigin="anonymous"></script>
-
-    <!--LESS-->
-    <link rel="stylesheet/less" type="text/css" href="styles/main.less" />
+    <!--FONTS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap">
+    <title>Buzzy Bee Coffee</title>
 </head>
-<body>
-    <!--DIV for sticky footer-->
-    <div class="site">
-      <!--Header-->
-    <header>
+
+<body class="location-site">
+  <!--Header-->
+  <header>
       <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Buzzy Bee Coffee logo"></a>
@@ -33,52 +39,85 @@
               <div class="navbar-nav">
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="about.html">About</a>
-                <a class="nav-link active" aria-current="page" href="#">Locations</a>
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="locations.html">Locations</a>
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
                 <a class="nav-link" href="menu.html"><button type="button" class="btn btn-secondary">Menu</button></a>
               </div>
             </div>
           </div>
         </nav>
   </header>
-
-  <!--Hero Image-->
-  <section class="location hero">
-    <div class="text container">
-      <!-----------------------------------------------------REPLACE BELOW WITH HERO IMAGE TEXT----------------------------------------------------->
-      <h1>Buzzy Bee Coffee</h1>
-      <p>Coffee - Tea - Bakery</p>
-    </div>
-  </section>
-
   <!--Page Content-->
+  <div class="container p-5 location-content">
+      <div class="container pt-5">
+          <div class="row g-4">
 
-  <div class="container body-content">
-    <!-----------------------------------------------------PUT YOUR PAGE CONTENT HERE----------------------------------------------------->
+              <div class="col-md">
+                  <h2 class="text-uppercase font-weight-bold">find a store near you</h2>
+                  <p class="text-muted">The freshest coffee is just a click away. Find a location, order 
+                  ahead, and earn points.</p>
+                  <form class="row g-3">
+                      <div class="col-auto">
+                        <input type="number" class="form-control"  placeholder="Search by Zip Code">
+                      </div>
+                      <div class="col-auto">
+                        <button type="search" class="btn btn-primary mb-3">Search</button>
+                      </div>
+                  </form>
+                  <hr size="5" width="90%" class="mt-5">  
+                  <p class="lead fw-bold mt-4">Opening Hours:</p>
+                  <p>Monday - Sunday : 10:00 AM - 10:00 PM</p>
+              </div>
+
+              <div class="col-md">
+                  <div id="map"></div>
+              </div>
+          </div>
+      </div>
   </div>
 
   <!--Footer-->
-  <footer>
-      <div class="container footer-content">
-        <figure class="col">
-          <img src="images/logo.png" alt="Buzzy Bee Coffee logo">
-        </figure>
-        
-        <p class="col">1850 W University Ave<br>Gainesville, FL 32603</p>
-        
-        <div class="social col">
-          <a href="www.facebook.com" target="_blank" class="link-secondary"><i class="fab fa-facebook-square"></i></a>
-          <a href="www.instagram.com" target="_blank" class="link-secondary"><i class="fab fa-instagram-square"></i></a>
-          <a href="www.twitter.com" target="_blank" class="link-secondary"><i class="fab fa-twitter-square"></i></a>
+<footer>
+  <div class="container footer-content">
+
+    <div class="row container-fluid align-items-center my-4">
+
+      <figure class="col-8">
+        <img src="images/logo.png" alt="Buzzy Bee Coffee logo">
+      </figure>
+
+      <div class="col-4">
+          <p class="mb-0">1850 W University Ave<br>Gainesville, FL 32603</p>
+      
+          <div class="social">
+            <a href="www.facebook.com" target="_blank" class="link-secondary"><i class="fab fa-facebook-square"></i></a>
+            <a href="www.instagram.com" target="_blank" class="link-secondary"><i class="fab fa-instagram-square"></i></a>
+            <a href="www.twitter.com" target="_blank" class="link-secondary"><i class="fab fa-twitter-square"></i></a>
         </div>
       </div>
-    </footer>
+        
     </div>
-    
+  </div>
+</footer>
 
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <!--LESS-->
-    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+  
+
+
+
+
+<!-- Bootstrap Bundel -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<!-- Mapbox -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiY2hlbnlpc2h1IiwiYSI6ImNrc3JvdDB3ZjA4ZHQzM24xbHNheWpjOXoifQ.JoAEDFAp0WuUp0fYMVUtrA';
+  var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-80.17852950831895,25.754182402574557], // starting position
+  zoom: 9 // starting zoom
+  });
+  map.addControl(new mapboxgl.NavigationControl());
+</script>
 </body>
 </html>
