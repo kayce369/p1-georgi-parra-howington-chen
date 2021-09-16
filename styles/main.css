@@ -79,33 +79,59 @@ header nav .navbar-nav .btn-secondary {
   background-image: url("../images/scoop_cup.jpg");
 }
 /* contact & locations */
-.effect-1 {
+#contactform .effect-1 {
   border: 0;
   outline: none;
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #000;
 }
-input:focus {
-  outline: 2px solid #a06b0a;
+#contactform input,
+#contactform textarea {
+  background-color: transparent;
 }
-textarea:focus {
-  outline: 2px solid #a06b0a;
+#contactform ::placeholder {
+  color: #000;
+  opacity: 1;
 }
-i {
+#contactform .btn-primary {
+  color: #fff;
+  background-color: #a85000;
+  border-color: #a85000;
+}
+.bi {
   font-size: 1.7rem;
+  color: #014a5e;
 }
-#map {
-  width: 300px;
-  height: 300px;
-  margin: auto;
-  border-radius: 10px;
+.contactbg {
+  position: relative;
+  /* overflow: hidden; */
 }
-@media (min-width: 768px) {
-  #map {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
+.contactbg h2 {
+  color: #000;
+  font-family: "roboto";
+}
+.contactbg p {
+  color: #000;
+  font-family: "urbanist";
+}
+.contactbg:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.5;
+  background-image: url("../images/contactimg.jpg");
+  background-position: 20% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-content {
+  z-index: 2;
+  position: relative;
 }
 /* contact & location page ends here */
 .menu {
