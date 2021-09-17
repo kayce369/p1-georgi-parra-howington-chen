@@ -8,6 +8,39 @@
   border: 0;
   padding: 0;
 }
+h1 {
+  font-size: 100px;
+  font-family: "Pacifico", cursive;
+  color: black;
+  font-weight: 400px;
+}
+h2 {
+  font-size: 55px;
+  font-family: "roboto";
+  color: black;
+  font-weight: 400px;
+}
+h3,
+h4 {
+  font-size: "roboto";
+  font-family: 25px;
+  color: black;
+  font-weight: 400px;
+}
+p {
+  font-family: "urbanist";
+  font-size: 16px;
+  color: black;
+}
+.btn-light {
+  background-color: #a85000;
+}
+.btn-light:hover {
+  background-color: #e2780e;
+}
+span {
+  color: #014a5e;
+}
 header {
   background-color: #fee6cc;
 }
@@ -27,21 +60,18 @@ header nav .nav-items {
 }
 header nav .navbar-nav {
   align-items: center;
-  /* Changed the color of the Menu Button -Yi */
 }
-header nav .navbar-nav .btn-secondary {
+header nav .btn-secondary {
   color: #fff;
   background-color: #a85000;
   border-color: #a85000;
 }
-/* Changed the border color of the hambergur menu to match the Logo - Yi*/
-.navbar-light .navbar-toggler {
+header .navbar-light .navbar-toggler {
   color: #5b2c02;
   border-color: #5b2c02;
 }
-/* Changed the link color of the current page - Yi*/
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link {
+header .navbar-light .navbar-nav .nav-link.active,
+header .navbar-light .navbar-nav .show > .nav-link {
   color: #e2780e;
   text-decoration: underline;
   font-weight: bold;
@@ -81,7 +111,43 @@ header nav .navbar-nav .btn-secondary {
 .menu {
   background-image: url("../images/scoop_cup.jpg");
 }
-/* ------contact & locations----------- */
+.h-fig {
+  width: 50%;
+  text-align: center;
+  margin: 20px 0;
+}
+.h-fig img {
+  width: 100%;
+  max-height: 204px;
+}
+.back-h {
+  background-color: #fee6cc;
+}
+.h-background {
+  padding-bottom: 20px;
+}
+.h-background .h-fig {
+  width: 100%;
+}
+.h-background .h-fig img {
+  max-height: 400px;
+}
+.h-fig-1 {
+  width: 50%;
+  text-align: center;
+  margin: 20px 0;
+}
+.h-fig-1 img {
+  width: 100%;
+  max-width: 600px;
+}
+.vert-cent,
+.h-background {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+}
+/* ------------------contact & locations----------- */
 #contactform .effect-1 {
   border: 0;
   outline: none;
@@ -107,11 +173,11 @@ header nav .navbar-nav .btn-secondary {
 }
 .contactbg {
   position: relative;
-  /* overflow: hidden; */
 }
 .contactbg h2 {
   color: #000;
   font-family: "roboto";
+  font-size: 30px;
 }
 .contactbg p {
   color: #000;
@@ -152,6 +218,7 @@ p.lead.font-weight-bold.text-center.w-responsive.mx-auto.mb-5.pt-3 {
 .location-content h2 {
   font-family: "roboto";
   color: black;
+  font-size: 30px;
 }
 .location-content p {
   font-family: "urbanist";
@@ -205,4 +272,18 @@ footer p {
 }
 footer i {
   color: #014a5e;
+  font-size: 2em;
+}
+footer .col-4 {
+  text-align: right;
+}
+@media (min-width: 750px) {
+  .h-fig,
+  .h-fig-1 {
+    width: 25%;
+    margin: 0;
+  }
+  .h-background .h-fig {
+    width: 50%;
+  }
 }

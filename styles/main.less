@@ -5,6 +5,49 @@
   .reset;
 }
 
+// Universal Styling
+
+// Fonts
+h1 {
+  font-size: @h1-size;
+  font-family: @h1-font;
+  color: black;
+  font-weight: @weight;
+}
+
+h2 {
+  font-size: @h2-size;
+  font-family: @heading-font;
+  color: black;
+  font-weight: @weight;
+}
+
+h3,
+h4 {
+  font-size: @heading-font;
+  font-family: @heading-size;
+  color: black;
+  font-weight: @weight;
+}
+
+p {
+  font-family: @para-font;
+  font-size: @para-size;
+  color: black;
+}
+
+.btn-light {
+  background-color: @red;
+  &:hover {
+    background-color: @orange;
+  }
+}
+
+// Span
+span {
+  color: @span;
+}
+
 // Header Styling
 header {
   background-color: #fee6cc;
@@ -23,28 +66,23 @@ header {
     }
     .navbar-nav {
       align-items: center;
-      /* Changed the color of the Menu Button -Yi */
-      .btn-secondary {
-        color: #fff;
-        background-color: #a85000;
-        border-color: #a85000;
-      }
+    }
+    .btn-secondary {
+      color: #fff;
+      background-color: @red;
+      border-color: @red;
     }
   }
-}
-
-/* Changed the border color of the hambergur menu to match the Logo - Yi*/
-.navbar-light .navbar-toggler {
-  color: #5b2c02;
-  border-color: #5b2c02;
-}
-
-/* Changed the link color of the current page - Yi*/
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: #e2780e;
-  text-decoration: underline;
-  font-weight: bold;
+  .navbar-light .navbar-toggler {
+    color: #5b2c02;
+    border-color: #5b2c02;
+  }
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .show > .nav-link {
+    color: #e2780e;
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
 
 // Hero Image
@@ -93,8 +131,48 @@ header {
 // -----------------------------------------------------HOME PAGE STYLING BELOW THIS LINE-----------------------------------------------------
 
 // -----------------------------------------------------ABOUT PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+.h-fig {
+  width: 50%;
+  text-align: center;
+  margin: 20px 0;
+  img {
+    width: 100%;
+    max-height: 204px;
+  }
+}
 
-/* ------contact & locations----------- */
+.back-h {
+  background-color: @lt-yellow;
+}
+
+.h-background {
+  padding-bottom: 20px;
+  .h-fig {
+    width: 100%;
+    img {
+      max-height: 400px;
+    }
+  }
+}
+
+.h-fig-1 {
+  width: 50%;
+  text-align: center;
+  margin: 20px 0;
+  img {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+.vert-cent,
+.h-background {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+}
+
+/* ------------------contact & locations----------- */
 #contactform {
   .effect-1 {
     border: 0;
@@ -124,10 +202,10 @@ header {
 
 .contactbg {
   position: relative;
-  /* overflow: hidden; */
   h2 {
     color: #000;
     font-family: @heading-font;
+    font-size: 30px;
   }
   p {
     color: #000;
@@ -176,6 +254,7 @@ p.lead.font-weight-bold.text-center.w-responsive.mx-auto.mb-5.pt-3 {
   h2 {
     font-family: "roboto";
     color: black;
+    font-size: 30px;
   }
 
   p {
@@ -240,5 +319,23 @@ footer {
   }
   i {
     color: @blue;
+    font-size: 2em;
+  }
+  .col-4 {
+    text-align: right;
+  }
+}
+
+@media (min-width: 750px) {
+  .h-fig,
+  .h-fig-1 {
+    width: 25%;
+    margin: 0;
+  }
+
+  .h-background {
+    .h-fig {
+      width: 50%;
+    }
   }
 }
