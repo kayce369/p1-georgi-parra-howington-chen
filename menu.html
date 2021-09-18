@@ -17,6 +17,15 @@
 
     <!--LESS-->
     <link rel="stylesheet/less" type="text/css" href="styles/main.less" />
+
+    <!--FONTS-->
+      <!--Pacifico-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+      <!--Roboto-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+      <!--Urbanist-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap">
+
 </head>
 <body>
     <!--DIV for sticky footer-->
@@ -46,15 +55,125 @@
   <section class="menu hero">
     <div class="text container">
       <!-----------------------------------------------------REPLACE BELOW WITH HERO IMAGE TEXT----------------------------------------------------->
-      <h1>Buzzy Bee Coffee</h1>
-      <p>Coffee - Tea - Bakery</p>
+      <h1>Menu</h1>
+      <p>Discover your new favorite Buzzy Bee drink. Be sure to check what new seasonal items we have available! </p>
     </div>
   </section>
 
   <!--Page Content-->
 
   <div class="container body-content">
-    <!-----------------------------------------------------PUT YOUR PAGE CONTENT HERE----------------------------------------------------->
+   <!--Page Content: Bootstrap Cards-->
+  <main>
+
+    <div class="container body-content">
+    
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/blackcoffee.jpeg" class="card-img-top" alt="Honey Black Coffee">
+            <div class="card-body">
+              <h5 class="card-title">Honey Black Coffee</h5>
+              <p class="card-text">Black coffee just got better! A smooth blend with a touch of honey will make your day just right.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/icedlatte.jpeg" class="card-img-top" alt="Iced Vanilla Latte">
+            <div class="card-body">
+              <h5 class="card-title">Iced Vanilla Latte</h5>
+              <p class="card-text">Smooth and subtly sweet. Espresso, milk, ice and vanilla syrup come together to create a delightful and tasty blend.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/oatmilkcap.jpeg" class="card-img-top" alt="Oatmilk Cappuccino">
+            <div class="card-body">
+              <h5 class="card-title">Oatmilk Cappuccino</h5>
+              <p class="card-text">Dark, rich espresso under a smooth layer of thick oatmilk foam. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/chailatte.jpeg" class="card-img-top" alt="Chai Latte">
+            <div class="card-body">
+              <h5 class="card-title">Chai Latte</h5>
+              <p class="card-text">Black tea infused with cinnamon, clove and other spices combiled with steamed milk and topped with foam. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/matchalatte.jpeg" class="card-img-top" alt="Matcha Latte">
+            <div class="card-body">
+              <h5 class="card-title">Matcha Latte</h5>
+              <p class="card-text">Smooth and creamy matcha sweetened just right and served with steamed milk. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/icedmatchalatte.jpeg" class="card-img-top" alt="Iced Matcha Latte">
+            <div class="card-body">
+              <h5 class="card-title">Iced Matcha Latte</h5>
+              <p class="card-text">Smooth and creamy matcha sweetened just right and served with milk over ice. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/pumpkinspicelatte.jpeg" class="card-img-top" alt="pumpkin spice">
+            <div class="card-body">
+              <h5 class="card-title">Pumpkin Spice Latte</h5>
+              <p class="card-text">Espresso and steamed milk with the celebrated flavor combination of pumpkin, cinnamon, nutmeg and clove. Enjoy it topped with milk foam and real pumpkin-pie spices (pumpkin not included).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/icedpumpkin_cb.jpeg" class="card-img-top" alt="Pumpkin Cold Brew">
+            <div class="card-body">
+              <h5 class="card-title">Iced Pumpkin Cold Brew</h5>
+              <p class="card-text">Cold brew sweetened with vanilla syrup and topped with pumpkin cream over ice. Doesn't get more fall than this.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/cranberrycider_tea.jpeg" class="card-img-top" alt="Cranberry Cider Tea">
+            <div class="card-body">
+              <h5 class="card-title">Cranberry Cider Tea</h5>
+              <p class="card-text">Black tea base and add the essence of cranberry and apple cider to create this aromatically awesome fall tea flavor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </main>
+
+
+  <!--Footer-->
+  <footer>
+      <div class="container footer-content">
+        <figure class="col">
+          <img src="images/logo.png" alt="Buzzy Bee Coffee logo">
+        </figure>
+        
+        <p class="col">1850 W University Ave<br>Gainesville, FL 32603</p>
+        
+        <div class="social col">
+          <a href="www.facebook.com" target="_blank" class="link-secondary"><i class="fab fa-facebook-square"></i></a>
+          <a href="www.instagram.com" target="_blank" class="link-secondary"><i class="fab fa-instagram-square"></i></a>
+          <a href="www.twitter.com" target="_blank" class="link-secondary"><i class="fab fa-twitter-square"></i></a>
+        </div>
+      </div>
+    </footer>
+    </div>
   </div>
 
   <!--Footer-->
