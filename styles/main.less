@@ -1,0 +1,286 @@
+@import "mixins";
+@import "variables";
+
+* {
+    .reset;
+}
+
+ // Fonts 
+h1 {
+    font-size: @h1-size;
+    font-family:  @h1-font;
+    color: black;
+    font-weight: @weight;
+}
+
+h2 {
+    font-size: @h2-size ;
+    font-family:  @heading-font;
+    color: black;
+    font-weight: @weight;
+}
+
+h3 h4 {
+    font-size: @heading-font;
+    font-family:  @heading-size;
+    color: black;
+    font-weight: @weight;
+}
+
+p {
+    font-family: @para-font;
+    font-size: @para-size;
+    color: black;
+}
+
+// Span 
+  span {
+      color: @span;
+  }
+ 
+// Header Styling
+
+header {
+    
+background-color: #fee6cc;
+    .navbar-brand {
+    flex: 1;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    img {
+    width: 50%;
+    max-width: 150px;
+}
+    
+.nav-items {
+    justify-content: flex-end;
+}
+    
+.navbar-nav {
+    align-items: center;
+    /* Changed the color of the Menu Button -Yi */
+    .btn-secondary {
+    color: #fff;
+    background-color: #a85000;
+    border-color: #a85000;
+}
+}
+}
+}
+
+.navbar-light .navbar-toggler {
+    color: #5b2c02;
+    border-color: #5b2c02;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #e2780e;
+    text-decoration: underline;
+    font-weight: bold;
+}
+    
+
+// Hero Image
+.hero {
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .text {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e7e7e7;
+    opacity: 75%;
+    z-index: 1;
+}
+
+.home {
+    background-image: url("../images/scoop_cup.jpg"); 
+}
+
+.about {
+    // -----------------------------------------------------REPLACE WITH ABOUT HERO IMAGE-----------------------------------------------------
+    background-image: url("../images/cup.jpg");
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    background-repeat:no-repeat;
+}
+
+.h-fig {
+    width: 50%;
+    text-align: center;
+    margin: 20px 0;
+    img {
+      width: 100%;
+      max-height: 204px;
+      padding-top: 2%;
+    }
+  }
+  
+  .about-section {
+    background-color: @lt-yellow;
+  }
+  
+  .h-background {
+    padding-bottom: 20px;
+    .h-fig {
+      width: 100%;
+      img {
+        max-height: 400px;
+      }
+    }
+  }
+  
+  .h-fig-1 {
+    width: 50%;
+    text-align: center;
+    margin: 20px 0;
+    img {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+  
+  .vert-cent,
+  .h-background {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+  }
+.row {
+    --bs-gutter-x: 1.5rem;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
+.meet {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.btn-light {
+    background-color: #a85000;
+    color: #000;
+    border-color: #f8f9fa;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+@media (min-width: 750px) {
+    .h-fig,
+    .h-fig-1 {
+    width: 25%;
+    margin: 0;
+}
+.h-background .h-fig {
+    width: 50%;
+ }
+}
+
+
+
+
+.contact {
+    // -----------------------------------------------------REPLACE WITH CONTACT HERO IMAGE-----------------------------------------------------
+    background-image: url("../images/scoop_cup.jpg");
+}
+
+.location {
+    // -----------------------------------------------------REPLACE WITH LOCATION HERO IMAGE-----------------------------------------------------
+    background-image: url("../images/scoop_cup.jpg");
+}
+
+.menu {
+    // -----------------------------------------------------REPLACE WITH MENU HERO IMAGE-----------------------------------------------------
+    background-image: url("../images/scoop_cup.jpg");
+}
+
+// -----------------------------------------------------HOME PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// -----------------------------------------------------ABOUT PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// -----------------------------------------------------LOCATION PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// -----------------------------------------------------CONTACT PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// -----------------------------------------------------MENU PAGE STYLING BELOW THIS LINE-----------------------------------------------------
+
+// Sticky Footer
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .body-content {
+      flex: 1;
+    }
+  }
+  
+  // Footer Styling
+  footer {
+    background-color: #e7e7e7;
+    figure {
+      margin: auto;
+      img {
+        width: 100px;
+      }
+    }
+    p {
+      font-family: @para-font;
+      font-size: 0.95em;
+    }
+    i {
+      color: @blue;
+      font-size: 2em;
+    }
+    .col-4 {
+      text-align: right;
+    }
+  }
+  
+  @media (min-width: 750px) {
+    .h-fig,
+    .h-fig-1 {
+      width: 25%;
+      margin: 0;
+    }
+  
+    .h-background {
+      .h-fig {
+        width: 50%;
+      }
+    }
+  }
